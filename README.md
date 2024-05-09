@@ -1,4 +1,4 @@
-
+<a name="readme-top"></a>
 <!-- ABOUT THE PROJECT -->
 # CS2 Automated Messages Plugin
 
@@ -32,13 +32,13 @@ To install the plugin you'll need [Metamod:Source 2.0](https://www.metamodsource
 To change automated server messages, you'll need to edit `/addons/counterstrikesharp/configs/plugins/AutomatedMessages/config.json`
 
 Here is an example config:
-```json
+```
 {
   // Prefix that gets applied to all Chat messages
   "ChatMessagePrefix": "{green}Automated Messages | {default}",
   "MessageGroups": [
     {
-	  // Interval 0 means it's a welcome message that gets sent when a player joins
+      // Interval 0 means it's a welcome message that gets sent when a player joins
       "Interval": 0,
       "Messages": [
         {
@@ -47,16 +47,16 @@ Here is an example config:
           "Message": "Message that gets sent as soon as the player joins"
         },
         {
-		  // Delay the sending of the message (useful to send the message after other plugins)
+          // Delay the sending of the message (useful to send the message after other plugins)
           "Delay": 10,
-		  // Message type: 0 - CHAT | 1 - CENTER | 2 - CENTER RED ALERT
+          // Message type: 0 - CHAT | 1 - CENTER | 2 - CENTER RED ALERT
           "MessageType": 0,
           "Message": "{red}Message that gets sent after 10 seconds"
         }
       ]
     },
     {
-	  // Rotate over the list of messages every 5 seconds and send them
+      // Rotate over the list of messages every 5 seconds and send them
       "Interval": 5,
       "Messages": [
         {
